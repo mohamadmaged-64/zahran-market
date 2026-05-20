@@ -156,22 +156,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* WhatsApp CTA */}
-          <div className="card p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/10 dark:to-emerald-900/10 border-green-200 dark:border-green-800">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">تواصل معنا عبر واتساب</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              لفريق خدمة العملاء جاهز للرد على استفساراتك
-            </p>
-            <a
-              href={SOCIAL_LINKS.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium py-2.5 px-6 rounded-lg transition-colors"
-            >
-              <MessageCircle className="w-5 h-5" />
-              تواصل عبر واتساب
-            </a>
-          </div>
+          
         </div>
       </div>
     </div>

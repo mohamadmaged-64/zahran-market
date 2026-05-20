@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Store, Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, MessageCircle } from "lucide-react";
+import { Store, Phone, Mail, MapPin, Clock, Facebook, PhoneCall, Instagram, MessageCircle } from "lucide-react";
 import { SITE_NAME, CONTACT_INFO, SOCIAL_LINKS } from "@/lib/constants";
 
 export default function Footer() {
@@ -25,9 +25,12 @@ export default function Footer() {
               <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-lg hover:bg-primary-600 transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href={SOCIAL_LINKS.whatsapp} target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-lg hover:bg-primary-600 transition-colors">
-                <MessageCircle className="w-4 h-4" />
-              </a>
+              <a
+  href="tel:19688"
+  className="p-2 bg-gray-800 rounded-lg hover:bg-primary-600 transition-colors"
+>
+  <PhoneCall className="w-4 h-4" />
+</a>
             </div>
           </div>
 

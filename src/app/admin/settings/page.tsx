@@ -8,12 +8,12 @@ export default function AdminSettingsPage() {
   const [settings, setSettings] = useState({
     site_name: "زهران ماركت",
     site_description: "السوق الإلكتروني المتكامل للتسوق",
-    phone: "+966 55 123 4567",
+    phone: "19688",
     email: "info@zahranmarket.com",
-    address: "شارع الملك فهد، الرياض، المملكة العربية السعودية",
+    address: "الشرقية ، الزقازيق ، حي الزهور",
     delivery_fee: "15",
     free_delivery_threshold: "200",
-    working_hours: "٨:٠٠ صباحاً - ١١:٠٠ مساءً",
+    working_hours: "8:00 صباحًا - 12:00 مساءً",
   });
 
   const [saving, setSaving] = useState(false);
