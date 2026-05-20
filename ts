@@ -6,12 +6,10 @@ export async function middleware(req: NextRequest) {
   const res = NextResponse.next();
   const supabase = createMiddlewareClient({ req, res });
 
-  // التحقق من الجلسة (هل اليوزر مسجل دخول؟)
   const {
     data: { session },
   } = await supabase.auth.getSession();
 
-  // إذا كان الرابط بيبدأ بـ /admin ومش مسجل دخول، حوله لصفحة الـ login
   if (req.nextUrl.pathname.startsWith('/admin') && !session && req.nextUrl.pathname !== '/admin/login') {
     return NextResponse.redirect(new URL('/admin/login', req.url));
   }
